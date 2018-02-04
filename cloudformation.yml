@@ -78,7 +78,7 @@ Parameters:
   IriVersionParameter:
     Description: "IRI version"
     Type: String
-    Default: "1.4.2.1"
+    Default: "1.4.2.wjm"
 
 # Mappings allow us to map a key to a corresponding set of named values
 # So if our instance is brought up in the eu-west-1 region we can use
@@ -189,7 +189,7 @@ Resources:
               - "\n"
               - "sudo -u iota mkdir -p /home/iota/node /home/iota/node/ixi /home/iota/node/mainnetdb"
               - "\n"
-              - !Sub "sudo -u iota wget -O /home/iota/node/iri-${IriVersionParameter}.jar https://github.com/iotaledger/iri/releases/download/v${IriVersionParameter}/iri-${IriVersionParameter}.jar"
+              - !Sub "sudo -u iota wget -O /home/iota/node/iri-${IriVersionParameter}.jar https://github.com/wjmelements/iri/releases/download/v${IriVersionParameter}/iri-${IriVersionParameter}.jar"
               - "\n"
               - "cat << \"EOF\" | sudo tee /lib/systemd/system/iota.service\n"
               - "[Unit]\n"
