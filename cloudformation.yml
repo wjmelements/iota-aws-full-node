@@ -13,7 +13,7 @@ Parameters:
   KeyNameParameter:
     Description: "Optional: Name of an existing EC2 KeyPair to enable SSH access to the instance"
     Type: String
-    Default: ""
+    Default: grafiti
   TimeoutCfStackCreation:
     Description: "Enter the CloudFormation stack creation timeout (in seconds)"
     Type: String
