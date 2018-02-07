@@ -232,7 +232,7 @@ Resources:
               - "TESTNET = false\n"
               - "DB_PATH = mainnetdb\n"
               - "RESCAN_DB = false\n"
-              - "REMOTE_LIMIT_API=\"removeNeighbors, addNeighbors, interruptAttachingToTangle, attachToTangle, getNeighbors, getTransactionsToApprove\"\n"
+              - "REMOTE_LIMIT_API=\"removeNeighbors, addNeighbors, interruptAttachingToTangle, attachToTangle, getNeighbors\"\n"
               - "NEIGHBORS = udp://94.156.128.15:14600 udp://185.181.8.149:14600\n"
               - "EOF\n"
               - "cd /tmp/ && curl -O http://db.iota.partners/IOTA.partners-mainnetdb.tar.gz && sudo -u iota tar xzfv /tmp/IOTA.partners-mainnetdb.tar.gz -C /home/iota/node/mainnetdb && rm /tmp/IOTA.partners-mainnetdb.tar.gz"
