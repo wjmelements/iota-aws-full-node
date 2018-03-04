@@ -78,7 +78,7 @@ Parameters:
   IriVersionParameter:
     Description: "IRI version"
     Type: String
-    Default: "1.4.2.wjm"
+    Default: "1.4.2.3"
 
 # Mappings allow us to map a key to a corresponding set of named values
 # So if our instance is brought up in the eu-west-1 region we can use
@@ -238,7 +238,6 @@ Resources:
               - "cd /tmp/ && curl -O http://db.iota.partners/IOTA.partners-mainnetdb.tar.gz && sudo -u iota tar xzfv /tmp/IOTA.partners-mainnetdb.tar.gz -C /home/iota/node/mainnetdb && rm /tmp/IOTA.partners-mainnetdb.tar.gz"
               - "\n"
               - "sudo service iota start\n"
-              - "echo '*/15 * * * * root bash -c \"bash <(curl -s https://gist.githubusercontent.com/zoran/48482038deda9ce5898c00f78d42f801/raw)\"' | sudo tee /etc/cron.d/iri_updater > /dev/null\n"
               - "apt-get install -y nodejs\n"
               - !Sub "sudo npm install -g nelson.cli@${NelsoCliVersionParameter}\n"
               - "sudo npm install -g iota-pm > /dev/null\n"
